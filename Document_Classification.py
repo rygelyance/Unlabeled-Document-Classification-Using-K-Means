@@ -76,7 +76,7 @@ def kmeans_maxmin(X, n_clusters, n_init_custom, max_iter, random_state=None):
 labels, centers, inertia = kmeans_maxmin(
     embeddings, 
     n_clusters=5, # In this case, I know the data is supposed to have five clusters, if I did not know this, I'd use either the Elbow or Silhouette Methods to find the optimal K
-    n_init_custom=1, # Try 100 random starts with MaxMin
+    n_init_custom=20, # Try 20 random starts with MaxMin
     max_iter=300, 
     random_state=None
 )
